@@ -1,0 +1,16 @@
+C:\Users\oneda\source\repos\SimpleNote\SimpleNote.Models\bin\Debug\SimpleNote.Models.dll.config
+C:\Users\oneda\source\repos\SimpleNote\SimpleNote.Models\bin\Debug\SimpleNote.Models.dll
+C:\Users\oneda\source\repos\SimpleNote\SimpleNote.Models\bin\Debug\SimpleNote.Models.pdb
+C:\Users\oneda\source\repos\SimpleNote\SimpleNote.Models\bin\Debug\EntityFramework.dll
+C:\Users\oneda\source\repos\SimpleNote\SimpleNote.Models\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\oneda\source\repos\SimpleNote\SimpleNote.Models\bin\Debug\Microsoft.AspNet.Identity.Core.dll
+C:\Users\oneda\source\repos\SimpleNote\SimpleNote.Models\bin\Debug\Microsoft.AspNet.Identity.EntityFramework.dll
+C:\Users\oneda\source\repos\SimpleNote\SimpleNote.Models\bin\Debug\EntityFramework.xml
+C:\Users\oneda\source\repos\SimpleNote\SimpleNote.Models\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\oneda\source\repos\SimpleNote\SimpleNote.Models\bin\Debug\Microsoft.AspNet.Identity.Core.xml
+C:\Users\oneda\source\repos\SimpleNote\SimpleNote.Models\bin\Debug\Microsoft.AspNet.Identity.EntityFramework.xml
+C:\Users\oneda\source\repos\SimpleNote\SimpleNote.Models\obj\Debug\SimpleNote.Models.csproj.AssemblyReference.cache
+C:\Users\oneda\source\repos\SimpleNote\SimpleNote.Models\obj\Debug\SimpleNote.Models.csproj.CoreCompileInputs.cache
+C:\Users\oneda\source\repos\SimpleNote\SimpleNote.Models\obj\Debug\SimpleNote.Models.csproj.CopyComplete
+C:\Users\oneda\source\repos\SimpleNote\SimpleNote.Models\obj\Debug\SimpleNote.Models.dll
+C:\Users\oneda\source\repos\SimpleNote\SimpleNote.Models\obj\Debug\SimpleNote.Models.pdb
