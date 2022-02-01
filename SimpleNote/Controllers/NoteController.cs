@@ -1,4 +1,6 @@
-﻿using SimpleNote.Models;
+﻿using Microsoft.AspNet.Identity;
+using SimpleNote.Models;
+using SimpleNote.Services;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -13,8 +15,11 @@ namespace SimpleNote.Controllers
         // GET: Note
         public ActionResult Index()
         {
-            var model = new NoteListItem[0];
-            return View();
+            var userId = Guid.Parse(User.Identity.GetUserId());
+            var service = new NoteService(userId);
+            var model = service.GetNotes();
+
+            return View(model);
         }
 
         // GET
@@ -27,10 +32,20 @@ namespace SimpleNote.Controllers
         [ValidateAntiForgeryToken]
         public ActionResult Create(NoteCreate model)
         {
-            if (ModelState.IsValid)
-            { 
+            //check if modelstate is valid
+            if (!ModelState.IsValid)
+            {
+                return View(model);
             }
-            return View(model);
+
+            //grabs current userId and calls a new note service for that user
+            var userId = Guid.Parse(User.Identity.GetUserId());
+            var service = new NoteService(userId);
+
+            service.CreateNote(model);
+
+            // then returns user back to the index view
+            return RedirectToAction("Index");
         }
     }
 }

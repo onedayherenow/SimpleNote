@@ -14,3 +14,9 @@ C:\Users\oneda\source\repos\SimpleNote\SimpleNote.Services\obj\Debug\SimpleNote.
 C:\Users\oneda\source\repos\SimpleNote\SimpleNote.Services\obj\Debug\SimpleNote.Services.csproj.CopyComplete
 C:\Users\oneda\source\repos\SimpleNote\SimpleNote.Services\obj\Debug\SimpleNote.Services.dll
 C:\Users\oneda\source\repos\SimpleNote\SimpleNote.Services\obj\Debug\SimpleNote.Services.pdb
+C:\Users\oneda\source\repos\SimpleNote\SimpleNote.Services\bin\Debug\SimpleNote.Data.dll
+C:\Users\oneda\source\repos\SimpleNote\SimpleNote.Services\bin\Debug\SimpleNote.Models.dll
+C:\Users\oneda\source\repos\SimpleNote\SimpleNote.Services\bin\Debug\SimpleNote.Data.pdb
+C:\Users\oneda\source\repos\SimpleNote\SimpleNote.Services\bin\Debug\SimpleNote.Data.dll.config
+C:\Users\oneda\source\repos\SimpleNote\SimpleNote.Services\bin\Debug\SimpleNote.Models.pdb
+C:\Users\oneda\source\repos\SimpleNote\SimpleNote.Services\bin\Debug\SimpleNote.Models.dll.config

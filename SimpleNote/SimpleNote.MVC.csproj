@@ -263,6 +263,10 @@
       <Project>{4f7af716-edd1-4785-9da7-e476f85a656b}</Project>
       <Name>SimpleNote.Models</Name>
     </ProjectReference>
+    <ProjectReference Include="..\SimpleNote.Services\SimpleNote.Services.csproj">
+      <Project>{4E2730E5-703F-468F-A10A-FA66E94DE05D}</Project>
+      <Name>SimpleNote.Services</Name>
+    </ProjectReference>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

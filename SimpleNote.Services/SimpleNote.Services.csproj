@@ -61,5 +61,15 @@
     <None Include="App.config" />
     <None Include="packages.config" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\SimpleNote.Data\SimpleNote.Data.csproj">
+      <Project>{97295df2-2548-4c18-9393-18b2342092a6}</Project>
+      <Name>SimpleNote.Data</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\SimpleNote.Models\SimpleNote.Models.csproj">
+      <Project>{4f7af716-edd1-4785-9da7-e476f85a656b}</Project>
+      <Name>SimpleNote.Models</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
