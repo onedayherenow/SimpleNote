@@ -31,21 +31,28 @@ namespace SimpleNote.Controllers
         [HttpPost]
         [ValidateAntiForgeryToken]
         public ActionResult Create(NoteCreate model)
-        {
-            //check if modelstate is valid
-            if (!ModelState.IsValid)
-            {
-                return View(model);
-            }
+		{
+			//check if modelstate is valid
+			if (!ModelState.IsValid)
+			{
+				return View(model);
+			}
 
-            //grabs current userId and calls a new note service for that user
-            var userId = Guid.Parse(User.Identity.GetUserId());
-            var service = new NoteService(userId);
+			//grabs current userId and calls a new note service for that user
+			var service = CreateNoteService();
 
-            service.CreateNote(model);
+			if (service.CreateNote(model))
+			{
+				// then returns user back to the index view
+				return RedirectToAction("Index");
+			};
+		}
 
-            // then returns user back to the index view
-            return RedirectToAction("Index");
-        }
-    }
+		private NoteService CreateNoteService()
+		{
+			var userId = Guid.Parse(User.Identity.GetUserId());
+			var service = new NoteService(userId);
+			return service;
+		}
+	}
 }
