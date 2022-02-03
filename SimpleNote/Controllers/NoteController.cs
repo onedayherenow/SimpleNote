@@ -46,6 +46,7 @@ namespace SimpleNote.Controllers
 				// then returns user back to the index view
 				return RedirectToAction("Index");
 			};
+			return View(model);
 		}
 
 		private NoteService CreateNoteService()
