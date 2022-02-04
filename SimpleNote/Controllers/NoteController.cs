@@ -44,8 +44,19 @@ namespace SimpleNote.Controllers
 			if (service.CreateNote(model))
 			{
 				// then returns user back to the index view
+				ViewBag.SaveResult = "Your note was created.";
 				return RedirectToAction("Index");
 			};
+
+			ModelState.AddModelError("", "note could not be created.");
+			return View(model);
+		}
+
+		public ActionResult Details(int id)
+		{
+			var service = CreateNoteService();
+			var model = service.GetNoteById(id);
+
 			return View(model);
 		}
 
