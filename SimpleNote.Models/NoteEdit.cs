@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace SimpleNote.Models
 {
-	public class NoteUpdate
+	class NoteEdit
 	{
 	}
 }
