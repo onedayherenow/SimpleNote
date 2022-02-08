@@ -98,6 +98,15 @@ namespace SimpleNote.Controllers
 			return View(model);
 		}
 
+		[ActionName("Delete")]
+		public ActionResult Delete(int id)
+		{
+			var service = CreateNoteService();
+			var model = service.GetNoteById(id);
+
+			return View(model);
+		}
+
 		private NoteService CreateNoteService()
 		{
 			var userId = Guid.Parse(User.Identity.GetUserId());
