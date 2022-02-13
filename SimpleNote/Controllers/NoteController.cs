@@ -98,6 +98,20 @@ namespace SimpleNote.Controllers
 			return View(model);
 		}
 
+		[HttpPost]
+		[ActionName("Delete")]
+		[ValidateAntiForgeryToken]
+		public ActionResult DeletePost(int id)
+		{
+			var service = CreateNoteService();
+
+			service.DeleteNote(id);
+
+			TempData["SaveResult"] = "Your note Was deleted";
+
+			return RedirectToAction("Index");
+		}
+		
 		[ActionName("Delete")]
 		public ActionResult Delete(int id)
 		{
